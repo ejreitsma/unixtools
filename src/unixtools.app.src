@@ -1,0 +1,14 @@
+{application, unixtools,
+ [
+  {description, "An Erlang unixtools library"},
+  {vsn, "1"},
+  {modules, [
+             unixtools
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
