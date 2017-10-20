@@ -20,7 +20,7 @@
 
 
 init() ->
-     ok = erlang:load_nif(code:priv_dir(unixtools)++"/unixtools_nif", 0).
+     ok = erlang:load_nif(code:priv_dir(unixtools)++"/unixtools", 0).
 
 open(Name, Flags) when is_list(Name) ->
     open(list_to_binary(Name), Flags);
